@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./styles.css";
+/* import background from "./background.jpeg"; */
+/* import background from "./assets/background.jpeg"; */
 
 const INITIAL_STATE = [
   { id: 1, task: "Okula Git", finished: true },
@@ -11,9 +13,15 @@ export default function App() {
   const [newTitle, setNewTitle] = useState("");
 
   return (
+    <div className="body" id="img" /* style={
+     {
+        background: `url(${background})`
+      }
+    } */ >  
     <div className="App">
-      <h1>What is your planning today?</h1>
+      <h1 className="title_h1">What is your planning today?</h1>
       <div className="add_form">
+      g
         <input
           value={newTitle}
           onChange={(e) => setNewTitle(e.target.value)}
@@ -24,7 +32,7 @@ export default function App() {
             {
             setList([
               ...list,
-              { id: Date.now(), title: newTitle, completed: false },
+              { id: Date.now(), task: newTitle, completed: false },
             ]);
           setNewTitle("");
           }
@@ -43,19 +51,20 @@ export default function App() {
               onClick={() => {
                 setList(
                   list.map((el) =>
-                    el.id === item.if ? { ...el, finished: !el.finished } : el
+                    el.id === item.id ? { ...el, finished: !el.finished } : el
                   )
                 );
               }}
               className={item.finished ? "done" : ""}
             >
-              {item.title}
+              {item.task}
             </div>
           )
         )}
       </div>
       <button onClick={() => setList(list.filter(item => !item.finished)) } 
       className="delete">Clear All</button>
+    </div>
     </div>
   );
 }

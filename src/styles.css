@@ -1,10 +1,46 @@
+.body{
+  background-image: url("./assets/background.jpeg");
+  display: flex;
+  background-attachment: fixed;
+  background-size: cover;
+  width: inherit;
+  height: 1000px;
+}
+
 .App {
     width: 400px;
-    margin: 0 auto;
-    font-family: sans-serif;
+    height: 400px;
+    margin: 200px auto;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Sen', sans-serif;
     text-align: center;
+    background-color: rgba(59, 166, 113, 0.4);
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px #faea10a4;
+  }
+
+  .title_h1{
+    display: flex;
+    padding-top: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Sen', sans-serif;
+    color:rgb(251, 251, 251);
+    
   }
   
+
+  .add_form :hover,
+  .delete :hover{
+    background: #FAEA10;
+    color: black;
+    cursor: pointer;
+  }
+
+/*   .delete :hover{
+    background: #FAEA10;
+    color: black;
+  } */
   .add_form input,
   .add_form button,
   .delete {
@@ -12,16 +48,24 @@
     border: 0;
     outline: 0;
     font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Sen', sans-serif;
+    cursor: pointer;
   }
   
   .add_form input {
-    background: #e1e1e2;
+    background: #f8f8fa;
+    border-radius: 5px;
+    margin:5px;
   }
   
   .add_form button,
   .delete {
-    background: #333;
-    color: white;
+    background: #000000;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Sen', sans-serif;
+    border-radius: 5px;
   }
   
   .list {
@@ -40,4 +84,10 @@
   .done {
     text-decoration: line-through;
   }
-  
+ /*  .dark{
+    background-color: #000000;
+  }
+  .dark *{
+  color:#f8f8fa
+  }
+   */
