@@ -12,27 +12,33 @@
     height: 400px;
     margin: 200px auto;
     background-attachment: fixed;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Sen', sans-serif;
+   /*  font-family: 'Poppins', sans-serif;
+    font-family: 'Sen', sans-serif; */
+    font-family: 'Kalam', cursive;
+    font-size: 20px;
     text-align: center;
     background-color: rgba(59, 166, 113, 0.4);
     border-radius: 10px;
-    box-shadow: 8px 8px 8px #faea10a4;
+    box-shadow: 8px 8px 8px #a9dc0fb0;
   }
 
   .title_h1{
     display: flex;
-    padding-top: 40px;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Sen', sans-serif;
-    color:rgb(251, 251, 251);
+    padding-top: 30px;
+    /* font-family: 'Poppins', sans-serif;
+    font-family: 'Sen', sans-serif; */
+    font-family: 'Kalam', cursive;
+    font-size: 28px;
+    margin-left: 31px;
+    color:rgb(0, 0, 0);
+    text-shadow:1px 1px 2px #6c4aa8, 0 0 1em rgb(114, 43, 106), 0 0 0.2em rgb(100, 182, 130);
     
   }
   
 
   .add_form :hover,
-  .delete :hover{
-    background: #FAEA10;
+  .delete_btn :hover{
+    background: #faea10bd;
     color: black;
     cursor: pointer;
   }
@@ -44,50 +50,60 @@
   .add_form input,
   .add_form button,
   .delete {
-    padding: 5px;
+    position: relative ;
+    padding: 5px ;
+    padding-bottom: 0;
+    margin-top: 30px;;
     border: 0;
     outline: 0;
     font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Sen', sans-serif;
-    cursor: pointer;
+    cursor: grab;
   }
   
   .add_form input {
     background: #f8f8fa;
+    opacity: 0.5;
     border-radius: 5px;
-    margin:5px;
+    font-family: 'Kalam', cursive;
+    margin:6px;
+    padding-left: 60px;
   }
   
   .add_form button,
-  .delete {
+  .delete_btn button{
     background: #000000;
     color: rgb(255, 255, 255);
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Sen', sans-serif;
-    border-radius: 5px;
+    font-family: 'Kalam', cursive;
+    border-radius: 7px;
+    font-size: 13px;
+    padding-bottom: 4px;
   }
-  
+
   .list {
     padding: 20px 0;
+    cursor:crosshair;
+    color: #0f0f16;
+    font-size: 15px;
+    font-family: 'Kalam', cursive;
   }
-  
-  .list > div {
+  .list :hover{
+    background: #dd7b20c6;
+    color: black;
+  }
+ 
+ /*  .clear{
+    margin: 10px;
+  } */
+  /* .list > div {
     padding: 8px 0;
     border-bottom: 1px solid #ccc;
-  }
+  } */
   
-  .list > div:last-child {
+  /* .list > div:last-child {
     border-bottom: 0;
-  }
+  } */
   
   .done {
     text-decoration: line-through;
   }
- /*  .dark{
-    background-color: #000000;
-  }
-  .dark *{
-  color:#f8f8fa
-  }
-   */
+
