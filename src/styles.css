@@ -1,5 +1,5 @@
 .body{
-  background-image: url("./assets/background.jpeg");
+  background-image: url("./assets/colorful.jpeg");
   display: flex;
   background-attachment: fixed;
   background-size: cover;
@@ -17,7 +17,7 @@
     font-family: 'Kalam', cursive;
     font-size: 20px;
     text-align: center;
-    background-color: rgba(59, 166, 113, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     box-shadow: 8px 8px 8px #a9dc0fb0;
   }
@@ -30,16 +30,16 @@
     font-family: 'Kalam', cursive;
     font-size: 28px;
     margin-left: 31px;
-    color:rgb(0, 0, 0);
-    text-shadow:1px 1px 2px #6c4aa8, 0 0 1em rgb(114, 43, 106), 0 0 0.2em rgb(100, 182, 130);
+    color:rgb(241, 215, 215);
+    text-shadow:1px 1px 6px #371add, 0 0 1em rgb(86, 43, 114), 0 0 0.2em rgb(100, 182, 130);
     
   }
   
 
   .add_form :hover,
   .delete_btn :hover{
-    background: #faea10bd;
-    color: black;
+    background: #eeb823;
+    color: rgb(0, 0, 0);
     cursor: pointer;
   }
 
@@ -62,32 +62,38 @@
   
   .add_form input {
     background: #f8f8fa;
-    opacity: 0.5;
+    opacity: 0.7;
     border-radius: 5px;
     font-family: 'Kalam', cursive;
-    margin:6px;
-    padding-left: 60px;
+    margin: 1px;
+    width: 310px;
+    /* padding-left: 180px; */
   }
   
   .add_form button,
   .delete_btn button{
-    background: #000000;
-    color: rgb(255, 255, 255);
+    background: #f5f5f5;
+    color: rgb(0, 0, 0);
     font-family: 'Kalam', cursive;
     border-radius: 7px;
     font-size: 13px;
     padding-bottom: 4px;
   }
+  .add_form button{
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+  }
 
   .list {
     padding: 20px 0;
     cursor:crosshair;
-    color: #0f0f16;
+    color: #f5f5f5;
     font-size: 15px;
     font-family: 'Kalam', cursive;
   }
   .list :hover{
-    background: #dd7b20c6;
+    background:  #a9dc0fb0;
     color: black;
   }
  
@@ -106,4 +112,9 @@
   .done {
     text-decoration: line-through;
   }
+  /* .delete_btn ::after .success{
+
+    transition: ease-in-out;
+  } */
+
 
